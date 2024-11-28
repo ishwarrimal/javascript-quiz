@@ -1,0 +1,9 @@
+
+.result {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px
+  }
