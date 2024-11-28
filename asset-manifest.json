@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ishwarrimal/javascript-quiz/static/css/main.5daf308e.css",
+    "main.js": "/ishwarrimal/javascript-quiz/static/js/main.a797eced.js",
+    "index.html": "/ishwarrimal/javascript-quiz/index.html",
+    "main.5daf308e.css.map": "/ishwarrimal/javascript-quiz/static/css/main.5daf308e.css.map",
+    "main.a797eced.js.map": "/ishwarrimal/javascript-quiz/static/js/main.a797eced.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5daf308e.css",
+    "static/js/main.a797eced.js"
+  ]
+}
