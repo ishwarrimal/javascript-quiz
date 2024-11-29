@@ -14,12 +14,12 @@ const AboutGameModal = ({ toggleAbout }) => {
           challenge yourself to get a perfect score!
         </p>
         <p>
-          <strong>Your Name:</strong> Ishwar Rimal
+          <strong>Built By:</strong> Ishwar Rimal
         </p>
         <p>
           <strong>GitHub Repo:</strong>{" "}
-          <a href="https://github.com/yourusername/quiz-game-repo" target="_blank" rel="noopener noreferrer">
-            https://github.com/yourusername/quiz-game-repo
+          <a href="https://github.com/ishwarrimal/javascript-quiz" target="_blank" rel="noopener noreferrer">
+          https://github.com/ishwarrimal/javascript-quiz
           </a>
         </p>
 

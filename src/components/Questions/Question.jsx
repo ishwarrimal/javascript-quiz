@@ -56,7 +56,7 @@ const Question = () => {
     <div className="question-container">
       <h2>{question.title}</h2>
         <SyntaxHighlighter language="javascript" style={solarizedlight}>
-          {decodeHtmlEntities(question.code)}
+          {question.code && decodeHtmlEntities(question.code)}
         </SyntaxHighlighter>
       
       <div className="choices">
