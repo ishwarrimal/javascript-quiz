@@ -1,5 +1,8 @@
 # React Quiz Game
 
+![javasacript-quiz](https://github.com/user-attachments/assets/c1290b95-fdbb-4e5b-8019-e09eac0de8ef)
+
+
 A fun and interactive JavaScript quiz game built with React. This game allows you to test and improve your JavaScript knowledge by answering multiple-choice questions. It provides immediate feedback on whether your answer was correct or wrong, along with detailed explanations. Your progress is tracked, and your score is saved locally so you can continue where you left off.
 
 ## Features
