@@ -10,7 +10,9 @@ const Popup = ({ show, correct, description, onClose }) => {
     <div className={`popup-overlay`}>
       <div className={`popup ${correct ? "popup-correct" : "popup-wrong"}`}>
         <h3>{correct ? "Correct!" : "Wrong!"}</h3>
+        <div className="description">
         <ReactMarkdown>{description}</ReactMarkdown>
+        </div>
         <button className="popup-done-button" onClick={onClose}>
           Done
         </button>

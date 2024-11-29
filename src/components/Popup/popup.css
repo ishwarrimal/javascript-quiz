@@ -47,6 +47,10 @@
   .popup-done-button:hover {
     background-color: #0056b3;
   }
+
+  .description {
+    text-align: left;
+  }
   
   @keyframes fadeIn {
     from {
