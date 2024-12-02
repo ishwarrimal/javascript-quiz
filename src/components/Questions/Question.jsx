@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
+import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { answerQuestion } from "../../store/quizSlice";
@@ -67,7 +68,7 @@ const Question = () => {
             className="choice-button"
             onClick={() => handleAnswer(answer)}
           >
-            {choice}
+            <ReactMarkdown>{choice}</ReactMarkdown>
           </button>
         
       })}
