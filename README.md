@@ -14,9 +14,6 @@ A fun and interactive JavaScript quiz game built with React. This game allows yo
 - **Persistence**: Continue your game from where you left off with local storage support.
 - **Responsive Design**: The game is fully responsive, so it works seamlessly on both desktop and mobile devices.
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=ishwarrimal/javascript-quiz&type=Date)](https://star-history.com/#ishwarrimal/javascript-quiz&Date)
 ## Credits
 
 A big thank you to **[Lydiahallie](https://github.com/lydiahallie/javascript-questions)** for providing the set of JavaScript questions used in this game.
