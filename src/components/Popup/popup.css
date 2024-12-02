@@ -13,6 +13,15 @@
     z-index: 1000;
     animation: fadeIn 0.3s ease;
   }
+  .description {
+    text-align: left;
+    max-height:50vh;
+    overflow-y: scroll;
+    
+  }
+  .description::-webkit-scrollbar{
+    display:none;
+  }
   
   .popup-correct {
     border: 3px solid #28a745;
