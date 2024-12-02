@@ -17,7 +17,3 @@ A fun and interactive JavaScript quiz game built with React. This game allows yo
 ## Credits
 
 A big thank you to **[Lydiahallie](https://github.com/lydiahallie/javascript-questions)** for providing the set of JavaScript questions used in this game.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
