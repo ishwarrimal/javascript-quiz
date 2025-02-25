@@ -4,3 +4,20 @@
     padding: 20px;
     border-radius: 5px;
   }
+
+  .github-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .github-link:hover {
+    color: #000;
+  }
+  
+  .github-link span {
+    margin-left: 5px;
+    font-size: 16px;
+  }
