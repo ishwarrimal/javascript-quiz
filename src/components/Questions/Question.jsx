@@ -8,6 +8,13 @@ import quizData from '../../assets/data'
 import Popup from "../Popup/Popup";
 import "./Questions.css";
 
+const ANSUWER_INDEX_MAPPING = {
+  A: 0,
+  B: 1,
+  C: 2,
+  D: 3
+};
+
 const Question = () => {
   const dispatch = useDispatch();
   const { currentQuestion, completed } = useSelector((state) => state.quiz);
@@ -17,29 +24,32 @@ const Question = () => {
     show: false,
     correct: false,
     description: "",
+    selectedAnswer: "",
+    correctAnswer: ""
   });
 
   const closePopup = () => {
-    setPopup({ show: false, correct: false, description: "" });
+    setPopup({ show: false, correct: false, description: "", selectedAnswer: '', correctAnswer: '' });
     dispatch(answerQuestion({ isCorrect: popup.correct })); // Dispatch the Redux action after closing the popup
   };
 
   const handleAnswer = (selectedChoice) => {
     // Extract the correct answer from the `answer` string in the data
-    const correctAnswer = question.answer.match(/\(#answer-([a-d])\)/)?.[1];
+    const correctAnswer = question.answer.option.toUpperCase();
     // Check if the selected choice matches the correct answer
-    const isCorrect = selectedChoice.toLowerCase() === correctAnswer;
+    const isCorrect = selectedChoice.toUpperCase() === correctAnswer;
 
-    const explanation = question.answer.split("\n\n").slice(1).join("\n\n");
+    const explanation = question.answer.reason;
 
     setPopup({
       show: true,
       correct: isCorrect,
       description: explanation,
+      selectedAnswer: question.choices[ANSUWER_INDEX_MAPPING[selectedChoice]],
+      correctAnswer: question.choices[ANSUWER_INDEX_MAPPING[correctAnswer]]
     });
   };
 
-  console.log('Ishwar ', completed, currentQuestion)
   if(completed) return <p>Game Completed</p>;
 
   const extractRawCode = (html) => {
@@ -77,6 +87,8 @@ const Question = () => {
         show={popup.show}
         correct={popup.correct}
         description={popup.description}
+        selectedAnswer={popup.selectedAnswer}
+        correctAnswer={popup.correctAnswer}
         onClose={closePopup}
       />
     </div>

@@ -61,6 +61,21 @@
     text-align: left;
   }
   
+  .answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
